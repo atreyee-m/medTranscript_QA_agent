@@ -1,0 +1,560 @@
+2025-04-27 21:21:08,399 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-04-27 21:21:08,399 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-27 21:21:08,401 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-04-27 21:21:08,515 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-04-27 21:21:08,645 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-04-27 21:21:08,740 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+2025-04-27 21:21:09,077 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-04-27 21:21:09,172 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+2025-04-27 21:21:09,270 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-04-27 21:21:09,590 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+2025-04-27 21:21:09,902 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-04-27 21:21:10,048 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6766
+2025-04-27 21:21:10,165 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6766
+2025-04-27 21:21:53,101 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-04-27 21:21:53,102 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-04-27 21:21:53,122 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=3 socket_options=None
+2025-04-27 21:21:53,184 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-04-27 21:21:53,198 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x15bed1e20>
+2025-04-27 21:21:53,198 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x159359350> server_hostname='api.gradio.app' timeout=3
+2025-04-27 21:21:53,222 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7861 local_address=None timeout=None socket_options=None
+2025-04-27 21:21:53,222 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1695c3ec0>
+2025-04-27 21:21:53,222 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-27 21:21:53,222 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-27 21:21:53,222 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-27 21:21:53,222 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-27 21:21:53,222 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-27 21:21:53,223 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 28 Apr 2025 04:21:53 GMT'), (b'server', b'uvicorn'), (b'content-length', b'4'), (b'content-type', b'application/json')])
+2025-04-27 21:21:53,223 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7861/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-27 21:21:53,223 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-27 21:21:53,223 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-27 21:21:53,223 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-27 21:21:53,223 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-27 21:21:53,223 - httpcore.connection - DEBUG - close.started
+2025-04-27 21:21:53,223 - httpcore.connection - DEBUG - close.complete
+2025-04-27 21:21:53,223 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7861 local_address=None timeout=3 socket_options=None
+2025-04-27 21:21:53,224 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1695e4b30>
+2025-04-27 21:21:53,224 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'HEAD']>
+2025-04-27 21:21:53,224 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-27 21:21:53,224 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'HEAD']>
+2025-04-27 21:21:53,224 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-27 21:21:53,224 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'HEAD']>
+2025-04-27 21:21:53,232 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 28 Apr 2025 04:21:53 GMT'), (b'server', b'uvicorn'), (b'content-length', b'14879'), (b'content-type', b'text/html; charset=utf-8')])
+2025-04-27 21:21:53,232 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7861/ "HTTP/1.1 200 OK"
+2025-04-27 21:21:53,232 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'HEAD']>
+2025-04-27 21:21:53,232 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-27 21:21:53,232 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-27 21:21:53,232 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-27 21:21:53,232 - httpcore.connection - DEBUG - close.started
+2025-04-27 21:21:53,232 - httpcore.connection - DEBUG - close.complete
+2025-04-27 21:21:53,232 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-04-27 21:21:53,251 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x159368170>
+2025-04-27 21:21:53,251 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-27 21:21:53,251 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-27 21:21:53,251 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-27 21:21:53,251 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-27 21:21:53,251 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-27 21:21:53,252 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/telemetry/gradio/initiated HTTP/1.1" 200 0
+2025-04-27 21:21:53,278 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 28 Apr 2025 04:21:53 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'21'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*')])
+2025-04-27 21:21:53,278 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-27 21:21:53,278 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-27 21:21:53,278 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-27 21:21:53,278 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-27 21:21:53,278 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-27 21:21:53,278 - httpcore.connection - DEBUG - close.started
+2025-04-27 21:21:53,279 - httpcore.connection - DEBUG - close.complete
+2025-04-27 21:21:53,343 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/telemetry/gradio/launched HTTP/1.1" 200 0
+2025-04-27 21:22:06,659 - __main__ - DEBUG - === New Gradio Request: What was the diagnosis for the ORIF surgery? ===
+2025-04-27 21:22:06,659 - agent - DEBUG - Received question: What was the diagnosis for the ORIF surgery?
+2025-04-27 21:22:06,661 - anthropic._base_client - DEBUG - Request options: {'method': 'post', 'url': '/v1/messages', 'timeout': Timeout(connect=5.0, read=600, write=600, pool=600), 'files': None, 'idempotency_key': 'stainless-python-retry-181188d5-b8ee-4428-9965-bf2141870ecd', 'json_data': {'max_tokens': 500, 'messages': [{'role': 'user', 'content': 'Question: "Decide which tool(s) are needed to answer this question: "What was the diagnosis for the ORIF surgery?".\n        Available tools:\n        - Document RAG (for clinical facts)\n        - Search (for public info)\n\n        Reply in format:\n        TOOL: [Document/Search/Both/All]\n        "\n\nDecide the best tool for answering it. Reply exactly with TOOL: [Document] or TOOL: [Search]. No other text.'}], 'model': 'claude-3-7-sonnet-20250219', 'system': 'You are an expert clinical AI assistant. You must strictly reply in ONLY one of the following formats: TOOL: [Document] or TOOL: [Search]. Never explain, never say anything else.', 'temperature': 0}}
+2025-04-27 21:22:06,696 - anthropic._base_client - DEBUG - Sending HTTP Request: POST https://api.anthropic.com/v1/messages
+2025-04-27 21:22:06,696 - httpcore.connection - DEBUG - connect_tcp.started host='api.anthropic.com' port=443 local_address=None timeout=5.0 socket_options=[(65535, 8, True), (6, 257, 60), (6, 258, 5)]
+2025-04-27 21:22:06,710 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x15bef2300>
+2025-04-27 21:22:06,710 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x117af8c50> server_hostname='api.anthropic.com' timeout=5.0
+2025-04-27 21:22:06,729 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x16a0414f0>
+2025-04-27 21:22:06,729 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-27 21:22:06,730 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-27 21:22:06,730 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-27 21:22:06,730 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-27 21:22:06,730 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-27 21:22:10,014 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 28 Apr 2025 04:22:09 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'anthropic-ratelimit-input-tokens-limit', b'20000'), (b'anthropic-ratelimit-input-tokens-remaining', b'20000'), (b'anthropic-ratelimit-input-tokens-reset', b'2025-04-28T04:22:09Z'), (b'anthropic-ratelimit-output-tokens-limit', b'8000'), (b'anthropic-ratelimit-output-tokens-remaining', b'8000'), (b'anthropic-ratelimit-output-tokens-reset', b'2025-04-28T04:22:09Z'), (b'anthropic-ratelimit-requests-limit', b'50'), (b'anthropic-ratelimit-requests-remaining', b'49'), (b'anthropic-ratelimit-requests-reset', b'2025-04-28T04:22:08Z'), (b'anthropic-ratelimit-tokens-limit', b'28000'), (b'anthropic-ratelimit-tokens-remaining', b'28000'), (b'anthropic-ratelimit-tokens-reset', b'2025-04-28T04:22:09Z'), (b'request-id', b'req_011CNaVSME8QX85HLpE83gLm'), (b'anthropic-organization-id', b'961c62a8-661b-402f-b3ec-38f150bfa917'), (b'via', b'1.1 google'), (b'CF-Cache-Status', b'DYNAMIC'), (b'X-Robots-Tag', b'none'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9373c6d41fb77af2-SJC'), (b'Content-Encoding', b'gzip')])
+2025-04-27 21:22:10,015 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-27 21:22:10,015 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-27 21:22:10,015 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-27 21:22:10,015 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-27 21:22:10,015 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-27 21:22:10,016 - anthropic._base_client - DEBUG - HTTP Response: POST https://api.anthropic.com/v1/messages "200 OK" Headers({'date': 'Mon, 28 Apr 2025 04:22:09 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'anthropic-ratelimit-input-tokens-limit': '20000', 'anthropic-ratelimit-input-tokens-remaining': '20000', 'anthropic-ratelimit-input-tokens-reset': '2025-04-28T04:22:09Z', 'anthropic-ratelimit-output-tokens-limit': '8000', 'anthropic-ratelimit-output-tokens-remaining': '8000', 'anthropic-ratelimit-output-tokens-reset': '2025-04-28T04:22:09Z', 'anthropic-ratelimit-requests-limit': '50', 'anthropic-ratelimit-requests-remaining': '49', 'anthropic-ratelimit-requests-reset': '2025-04-28T04:22:08Z', 'anthropic-ratelimit-tokens-limit': '28000', 'anthropic-ratelimit-tokens-remaining': '28000', 'anthropic-ratelimit-tokens-reset': '2025-04-28T04:22:09Z', 'request-id': 'req_011CNaVSME8QX85HLpE83gLm', 'anthropic-organization-id': '961c62a8-661b-402f-b3ec-38f150bfa917', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'x-robots-tag': 'none', 'server': 'cloudflare', 'cf-ray': '9373c6d41fb77af2-SJC', 'content-encoding': 'gzip'})
+2025-04-27 21:22:10,016 - anthropic._base_client - DEBUG - request_id: req_011CNaVSME8QX85HLpE83gLm
+2025-04-27 21:22:10,023 - agent - DEBUG - Tool decision raw response: 'TOOL: [Document]'
+2025-04-27 21:22:10,023 - agent - DEBUG - Parsed decision - Use Document: True, Use Search: False
+2025-04-27 21:22:10,024 - agent - DEBUG - Retrieving from documents...
+2025-04-27 21:22:10,601 - agent - DEBUG - Document retrieval returned 43 characters
+2025-04-27 21:23:57,297 - httpcore.connection - DEBUG - close.started
+2025-04-27 21:23:57,298 - httpcore.connection - DEBUG - close.complete
+2025-04-27 21:24:02,496 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-04-27 21:24:02,496 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-27 21:24:02,498 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-04-27 21:24:02,664 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-04-27 21:24:02,755 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-04-27 21:24:02,858 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+2025-04-27 21:24:02,952 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-04-27 21:24:03,050 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+2025-04-27 21:24:03,149 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-04-27 21:24:03,250 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+2025-04-27 21:24:03,559 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-04-27 21:24:03,676 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6766
+2025-04-27 21:24:03,791 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6766
+2025-04-27 21:24:46,687 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-04-27 21:24:46,688 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-04-27 21:24:46,696 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=3 socket_options=None
+2025-04-27 21:24:46,767 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-04-27 21:24:46,805 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7861 local_address=None timeout=None socket_options=None
+2025-04-27 21:24:46,805 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x16a270920>
+2025-04-27 21:24:46,805 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-27 21:24:46,805 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-27 21:24:46,805 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-27 21:24:46,805 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-27 21:24:46,805 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-27 21:24:46,806 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 28 Apr 2025 04:24:46 GMT'), (b'server', b'uvicorn'), (b'content-length', b'4'), (b'content-type', b'application/json')])
+2025-04-27 21:24:46,806 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7861/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-27 21:24:46,806 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-27 21:24:46,806 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-27 21:24:46,806 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-27 21:24:46,806 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-27 21:24:46,806 - httpcore.connection - DEBUG - close.started
+2025-04-27 21:24:46,806 - httpcore.connection - DEBUG - close.complete
+2025-04-27 21:24:46,807 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7861 local_address=None timeout=3 socket_options=None
+2025-04-27 21:24:46,807 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x16a2c0890>
+2025-04-27 21:24:46,807 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'HEAD']>
+2025-04-27 21:24:46,807 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-27 21:24:46,807 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'HEAD']>
+2025-04-27 21:24:46,807 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-27 21:24:46,807 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'HEAD']>
+2025-04-27 21:24:46,815 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 28 Apr 2025 04:24:46 GMT'), (b'server', b'uvicorn'), (b'content-length', b'14879'), (b'content-type', b'text/html; charset=utf-8')])
+2025-04-27 21:24:46,815 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7861/ "HTTP/1.1 200 OK"
+2025-04-27 21:24:46,815 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'HEAD']>
+2025-04-27 21:24:46,815 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-27 21:24:46,815 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-27 21:24:46,815 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-27 21:24:46,815 - httpcore.connection - DEBUG - close.started
+2025-04-27 21:24:46,815 - httpcore.connection - DEBUG - close.complete
+2025-04-27 21:24:46,816 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-04-27 21:24:46,816 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/telemetry/gradio/initiated HTTP/1.1" 200 0
+2025-04-27 21:24:46,830 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x132f0b020>
+2025-04-27 21:24:46,830 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x132c5aad0> server_hostname='api.gradio.app' timeout=3
+2025-04-27 21:24:46,885 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1312796a0>
+2025-04-27 21:24:46,885 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-27 21:24:46,885 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-27 21:24:46,885 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-27 21:24:46,886 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-27 21:24:46,886 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-27 21:24:46,913 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 28 Apr 2025 04:24:46 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'21'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*')])
+2025-04-27 21:24:46,913 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-27 21:24:46,913 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-27 21:24:46,913 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-27 21:24:46,913 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-27 21:24:46,913 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-27 21:24:46,913 - httpcore.connection - DEBUG - close.started
+2025-04-27 21:24:46,914 - httpcore.connection - DEBUG - close.complete
+2025-04-27 21:24:46,916 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/telemetry/gradio/launched HTTP/1.1" 200 0
+2025-04-27 21:25:24,297 - __main__ - DEBUG - === New Gradio Request: What was the diagnosis for the ORIF surgery? ===
+2025-04-27 21:25:24,297 - agent - DEBUG - Received question: What was the diagnosis for the ORIF surgery?
+2025-04-27 21:25:24,299 - anthropic._base_client - DEBUG - Request options: {'method': 'post', 'url': '/v1/messages', 'timeout': Timeout(connect=5.0, read=600, write=600, pool=600), 'files': None, 'idempotency_key': 'stainless-python-retry-65bcf5f3-5a4f-48be-9b3c-9ceb5ef695ab', 'json_data': {'max_tokens': 500, 'messages': [{'role': 'user', 'content': 'Question: "Decide which tool(s) are needed to answer this question: "What was the diagnosis for the ORIF surgery?".\n        Available tools:\n        - Document RAG (for clinical facts)\n        - Search (for public info)\n\n        Reply in format:\n        TOOL: [Document/Search/Both/All]\n        "\n\nDecide the best tool for answering it. Reply exactly with TOOL: [Document] or TOOL: [Search]. No other text.'}], 'model': 'claude-3-7-sonnet-20250219', 'system': 'You are an expert clinical AI assistant. You must strictly reply in ONLY one of the following formats: TOOL: [Document] or TOOL: [Search]. Never explain, never say anything else.', 'temperature': 0}}
+2025-04-27 21:25:24,329 - anthropic._base_client - DEBUG - Sending HTTP Request: POST https://api.anthropic.com/v1/messages
+2025-04-27 21:25:24,329 - httpcore.connection - DEBUG - connect_tcp.started host='api.anthropic.com' port=443 local_address=None timeout=5.0 socket_options=[(65535, 8, True), (6, 257, 60), (6, 258, 5)]
+2025-04-27 21:25:24,342 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x16a4257f0>
+2025-04-27 21:25:24,342 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x1312aef50> server_hostname='api.anthropic.com' timeout=5.0
+2025-04-27 21:25:24,359 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x16a425a60>
+2025-04-27 21:25:24,359 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-27 21:25:24,359 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-27 21:25:24,359 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-27 21:25:24,359 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-27 21:25:24,359 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-27 21:25:24,979 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 28 Apr 2025 04:25:24 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'anthropic-ratelimit-input-tokens-limit', b'20000'), (b'anthropic-ratelimit-input-tokens-remaining', b'20000'), (b'anthropic-ratelimit-input-tokens-reset', b'2025-04-28T04:25:24Z'), (b'anthropic-ratelimit-output-tokens-limit', b'8000'), (b'anthropic-ratelimit-output-tokens-remaining', b'8000'), (b'anthropic-ratelimit-output-tokens-reset', b'2025-04-28T04:25:24Z'), (b'anthropic-ratelimit-requests-limit', b'50'), (b'anthropic-ratelimit-requests-remaining', b'49'), (b'anthropic-ratelimit-requests-reset', b'2025-04-28T04:25:25Z'), (b'anthropic-ratelimit-tokens-limit', b'28000'), (b'anthropic-ratelimit-tokens-remaining', b'28000'), (b'anthropic-ratelimit-tokens-reset', b'2025-04-28T04:25:24Z'), (b'request-id', b'req_011CNaVgvABBjqeDgRbZmWXJ'), (b'anthropic-organization-id', b'961c62a8-661b-402f-b3ec-38f150bfa917'), (b'via', b'1.1 google'), (b'CF-Cache-Status', b'DYNAMIC'), (b'X-Robots-Tag', b'none'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9373cba74ac9254e-SJC'), (b'Content-Encoding', b'gzip')])
+2025-04-27 21:25:24,981 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-27 21:25:24,981 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-27 21:25:24,982 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-27 21:25:24,982 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-27 21:25:24,982 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-27 21:25:24,983 - anthropic._base_client - DEBUG - HTTP Response: POST https://api.anthropic.com/v1/messages "200 OK" Headers({'date': 'Mon, 28 Apr 2025 04:25:24 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'anthropic-ratelimit-input-tokens-limit': '20000', 'anthropic-ratelimit-input-tokens-remaining': '20000', 'anthropic-ratelimit-input-tokens-reset': '2025-04-28T04:25:24Z', 'anthropic-ratelimit-output-tokens-limit': '8000', 'anthropic-ratelimit-output-tokens-remaining': '8000', 'anthropic-ratelimit-output-tokens-reset': '2025-04-28T04:25:24Z', 'anthropic-ratelimit-requests-limit': '50', 'anthropic-ratelimit-requests-remaining': '49', 'anthropic-ratelimit-requests-reset': '2025-04-28T04:25:25Z', 'anthropic-ratelimit-tokens-limit': '28000', 'anthropic-ratelimit-tokens-remaining': '28000', 'anthropic-ratelimit-tokens-reset': '2025-04-28T04:25:24Z', 'request-id': 'req_011CNaVgvABBjqeDgRbZmWXJ', 'anthropic-organization-id': '961c62a8-661b-402f-b3ec-38f150bfa917', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'x-robots-tag': 'none', 'server': 'cloudflare', 'cf-ray': '9373cba74ac9254e-SJC', 'content-encoding': 'gzip'})
+2025-04-27 21:25:24,983 - anthropic._base_client - DEBUG - request_id: req_011CNaVgvABBjqeDgRbZmWXJ
+2025-04-27 21:25:24,993 - agent - DEBUG - Tool decision raw response: 'TOOL: [Document]'
+2025-04-27 21:25:24,994 - agent - DEBUG - Parsed decision - Use Document: True, Use Search: False
+2025-04-27 21:25:24,994 - agent - DEBUG - Retrieving from documents...
+2025-04-27 21:25:25,434 - agent - DEBUG - Document retrieval returned 5595 characters
+2025-04-27 21:25:59,797 - __main__ - DEBUG - === New Gradio Request: How long is recovery after a bilateral reduction mammoplasty? ===
+2025-04-27 21:25:59,798 - agent - DEBUG - Received question: How long is recovery after a bilateral reduction mammoplasty?
+2025-04-27 21:25:59,798 - anthropic._base_client - DEBUG - Request options: {'method': 'post', 'url': '/v1/messages', 'timeout': Timeout(connect=5.0, read=600, write=600, pool=600), 'files': None, 'idempotency_key': 'stainless-python-retry-11e0ec95-e1e5-4035-8aa1-2c399f7ce71d', 'json_data': {'max_tokens': 500, 'messages': [{'role': 'user', 'content': 'Question: "Decide which tool(s) are needed to answer this question: "How long is recovery after a bilateral reduction mammoplasty?".\n        Available tools:\n        - Document RAG (for clinical facts)\n        - Search (for public info)\n\n        Reply in format:\n        TOOL: [Document/Search/Both/All]\n        "\n\nDecide the best tool for answering it. Reply exactly with TOOL: [Document] or TOOL: [Search]. No other text.'}], 'model': 'claude-3-7-sonnet-20250219', 'system': 'You are an expert clinical AI assistant. You must strictly reply in ONLY one of the following formats: TOOL: [Document] or TOOL: [Search]. Never explain, never say anything else.', 'temperature': 0}}
+2025-04-27 21:25:59,799 - anthropic._base_client - DEBUG - Sending HTTP Request: POST https://api.anthropic.com/v1/messages
+2025-04-27 21:25:59,799 - httpcore.connection - DEBUG - close.started
+2025-04-27 21:25:59,799 - httpcore.connection - DEBUG - close.complete
+2025-04-27 21:25:59,799 - httpcore.connection - DEBUG - connect_tcp.started host='api.anthropic.com' port=443 local_address=None timeout=5.0 socket_options=[(65535, 8, True), (6, 257, 60), (6, 258, 5)]
+2025-04-27 21:25:59,817 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x132da3410>
+2025-04-27 21:25:59,818 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x1312aef50> server_hostname='api.anthropic.com' timeout=5.0
+2025-04-27 21:25:59,841 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x132da33e0>
+2025-04-27 21:25:59,842 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-27 21:25:59,842 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-27 21:25:59,842 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-27 21:25:59,842 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-27 21:25:59,842 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-27 21:26:00,900 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 28 Apr 2025 04:26:00 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'anthropic-ratelimit-input-tokens-limit', b'20000'), (b'anthropic-ratelimit-input-tokens-remaining', b'20000'), (b'anthropic-ratelimit-input-tokens-reset', b'2025-04-28T04:26:00Z'), (b'anthropic-ratelimit-output-tokens-limit', b'8000'), (b'anthropic-ratelimit-output-tokens-remaining', b'8000'), (b'anthropic-ratelimit-output-tokens-reset', b'2025-04-28T04:26:00Z'), (b'anthropic-ratelimit-requests-limit', b'50'), (b'anthropic-ratelimit-requests-remaining', b'49'), (b'anthropic-ratelimit-requests-reset', b'2025-04-28T04:26:01Z'), (b'anthropic-ratelimit-tokens-limit', b'28000'), (b'anthropic-ratelimit-tokens-remaining', b'28000'), (b'anthropic-ratelimit-tokens-reset', b'2025-04-28T04:26:00Z'), (b'request-id', b'req_011CNaVjXqL3cyKcLd4UdhFn'), (b'anthropic-organization-id', b'961c62a8-661b-402f-b3ec-38f150bfa917'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Robots-Tag', b'none'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9373cc850b74cf15-SJC'), (b'Content-Encoding', b'gzip')])
+2025-04-27 21:26:00,901 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-27 21:26:00,901 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-27 21:26:00,902 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-27 21:26:00,902 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-27 21:26:00,902 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-27 21:26:00,902 - anthropic._base_client - DEBUG - HTTP Response: POST https://api.anthropic.com/v1/messages "200 OK" Headers({'date': 'Mon, 28 Apr 2025 04:26:00 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'anthropic-ratelimit-input-tokens-limit': '20000', 'anthropic-ratelimit-input-tokens-remaining': '20000', 'anthropic-ratelimit-input-tokens-reset': '2025-04-28T04:26:00Z', 'anthropic-ratelimit-output-tokens-limit': '8000', 'anthropic-ratelimit-output-tokens-remaining': '8000', 'anthropic-ratelimit-output-tokens-reset': '2025-04-28T04:26:00Z', 'anthropic-ratelimit-requests-limit': '50', 'anthropic-ratelimit-requests-remaining': '49', 'anthropic-ratelimit-requests-reset': '2025-04-28T04:26:01Z', 'anthropic-ratelimit-tokens-limit': '28000', 'anthropic-ratelimit-tokens-remaining': '28000', 'anthropic-ratelimit-tokens-reset': '2025-04-28T04:26:00Z', 'request-id': 'req_011CNaVjXqL3cyKcLd4UdhFn', 'anthropic-organization-id': '961c62a8-661b-402f-b3ec-38f150bfa917', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'x-robots-tag': 'none', 'server': 'cloudflare', 'cf-ray': '9373cc850b74cf15-SJC', 'content-encoding': 'gzip'})
+2025-04-27 21:26:00,903 - anthropic._base_client - DEBUG - request_id: req_011CNaVjXqL3cyKcLd4UdhFn
+2025-04-27 21:26:00,904 - agent - DEBUG - Tool decision raw response: 'TOOL: [Document]'
+2025-04-27 21:26:00,904 - agent - DEBUG - Parsed decision - Use Document: True, Use Search: False
+2025-04-27 21:26:00,904 - agent - DEBUG - Retrieving from documents...
+2025-04-27 21:26:01,136 - agent - DEBUG - Document retrieval returned 9259 characters
+2025-04-27 21:30:51,555 - httpcore.connection - DEBUG - close.started
+2025-04-27 21:30:51,556 - httpcore.connection - DEBUG - close.complete
+2025-04-27 21:30:56,671 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-04-27 21:30:56,671 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-27 21:30:56,673 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-04-27 21:30:56,968 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-04-27 21:30:57,064 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-04-27 21:30:57,160 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+2025-04-27 21:30:57,256 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-04-27 21:30:57,430 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+2025-04-27 21:30:57,530 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-04-27 21:30:57,631 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+2025-04-27 21:30:57,920 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-04-27 21:30:58,048 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6766
+2025-04-27 21:30:58,167 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6766
+2025-04-27 21:31:41,564 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-04-27 21:31:41,565 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-04-27 21:31:41,573 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=3 socket_options=None
+2025-04-27 21:31:41,641 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x14a5136e0>
+2025-04-27 21:31:41,641 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x159c5aad0> server_hostname='api.gradio.app' timeout=3
+2025-04-27 21:31:41,647 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-04-27 21:31:41,685 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7861 local_address=None timeout=None socket_options=None
+2025-04-27 21:31:41,685 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1689f7e60>
+2025-04-27 21:31:41,685 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-27 21:31:41,685 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-27 21:31:41,685 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-27 21:31:41,685 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-27 21:31:41,685 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-27 21:31:41,686 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 28 Apr 2025 04:31:41 GMT'), (b'server', b'uvicorn'), (b'content-length', b'4'), (b'content-type', b'application/json')])
+2025-04-27 21:31:41,686 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7861/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-27 21:31:41,687 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-27 21:31:41,687 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-27 21:31:41,687 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-27 21:31:41,687 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-27 21:31:41,687 - httpcore.connection - DEBUG - close.started
+2025-04-27 21:31:41,687 - httpcore.connection - DEBUG - close.complete
+2025-04-27 21:31:41,687 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7861 local_address=None timeout=3 socket_options=None
+2025-04-27 21:31:41,687 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x168a184d0>
+2025-04-27 21:31:41,687 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'HEAD']>
+2025-04-27 21:31:41,688 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-27 21:31:41,688 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'HEAD']>
+2025-04-27 21:31:41,688 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-27 21:31:41,688 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'HEAD']>
+2025-04-27 21:31:41,697 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 28 Apr 2025 04:31:41 GMT'), (b'server', b'uvicorn'), (b'content-length', b'14880'), (b'content-type', b'text/html; charset=utf-8')])
+2025-04-27 21:31:41,697 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7861/ "HTTP/1.1 200 OK"
+2025-04-27 21:31:41,697 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'HEAD']>
+2025-04-27 21:31:41,697 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-27 21:31:41,697 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-27 21:31:41,697 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x159e76e10>
+2025-04-27 21:31:41,697 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-27 21:31:41,697 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-27 21:31:41,697 - httpcore.connection - DEBUG - close.started
+2025-04-27 21:31:41,697 - httpcore.connection - DEBUG - close.complete
+2025-04-27 21:31:41,697 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-27 21:31:41,697 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-27 21:31:41,698 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-27 21:31:41,698 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-27 21:31:41,698 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/telemetry/gradio/initiated HTTP/1.1" 200 0
+2025-04-27 21:31:41,698 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-04-27 21:31:41,725 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 28 Apr 2025 04:31:41 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'21'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*')])
+2025-04-27 21:31:41,725 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-27 21:31:41,725 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-27 21:31:41,725 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-27 21:31:41,725 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-27 21:31:41,725 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-27 21:31:41,725 - httpcore.connection - DEBUG - close.started
+2025-04-27 21:31:41,725 - httpcore.connection - DEBUG - close.complete
+2025-04-27 21:31:41,813 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/telemetry/gradio/launched HTTP/1.1" 200 0
+2025-04-27 21:32:07,750 - __main__ - DEBUG - === New Gradio Request: How long is recovery after a bilateral reduction mammoplasty? ===
+2025-04-27 21:32:07,750 - agent - DEBUG - Received question: How long is recovery after a bilateral reduction mammoplasty?
+2025-04-27 21:32:07,752 - anthropic._base_client - DEBUG - Request options: {'method': 'post', 'url': '/v1/messages', 'timeout': Timeout(connect=5.0, read=600, write=600, pool=600), 'files': None, 'idempotency_key': 'stainless-python-retry-144c710b-054e-477c-b32a-2db40e3324ec', 'json_data': {'max_tokens': 500, 'messages': [{'role': 'user', 'content': 'Question: "Decide which tool(s) are needed to answer this question: "How long is recovery after a bilateral reduction mammoplasty?".\n        Available tools:\n        - Document RAG (for clinical facts)\n        - Search (for public info)\n\n        Reply in format:\n        TOOL: [Document/Search/Both/All]\n        "\n\nDecide the best tool for answering it. Reply exactly with TOOL: [Document], TOOL: [Search], or TOOL: [Both]. No other text.'}], 'model': 'claude-3-7-sonnet-20250219', 'system': 'You are an expert clinical AI assistant. You must strictly reply in ONLY one of the following formats: TOOL: [Document], TOOL: [Search], or TOOL: [Both].\n\nFor questions about general medical information like recovery times, procedure durations, or standard practices, prefer TOOL: [Search].\nFor questions about specific medical cases or rare conditions found in the document database, use TOOL: [Document].\nFor questions that would benefit from both sources, use TOOL: [Both].\n\nNever explain, never say anything else.', 'temperature': 0}}
+2025-04-27 21:32:07,789 - anthropic._base_client - DEBUG - Sending HTTP Request: POST https://api.anthropic.com/v1/messages
+2025-04-27 21:32:07,790 - httpcore.connection - DEBUG - connect_tcp.started host='api.anthropic.com' port=443 local_address=None timeout=5.0 socket_options=[(65535, 8, True), (6, 257, 60), (6, 258, 5)]
+2025-04-27 21:32:07,806 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x168c582f0>
+2025-04-27 21:32:07,806 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x14a7aef50> server_hostname='api.anthropic.com' timeout=5.0
+2025-04-27 21:32:07,821 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x168c586b0>
+2025-04-27 21:32:07,821 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-27 21:32:07,821 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-27 21:32:07,821 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-27 21:32:07,821 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-27 21:32:07,821 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-27 21:32:08,770 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 28 Apr 2025 04:32:08 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'anthropic-ratelimit-input-tokens-limit', b'20000'), (b'anthropic-ratelimit-input-tokens-remaining', b'20000'), (b'anthropic-ratelimit-input-tokens-reset', b'2025-04-28T04:32:08Z'), (b'anthropic-ratelimit-output-tokens-limit', b'8000'), (b'anthropic-ratelimit-output-tokens-remaining', b'8000'), (b'anthropic-ratelimit-output-tokens-reset', b'2025-04-28T04:32:08Z'), (b'anthropic-ratelimit-requests-limit', b'50'), (b'anthropic-ratelimit-requests-remaining', b'49'), (b'anthropic-ratelimit-requests-reset', b'2025-04-28T04:32:09Z'), (b'anthropic-ratelimit-tokens-limit', b'28000'), (b'anthropic-ratelimit-tokens-remaining', b'28000'), (b'anthropic-ratelimit-tokens-reset', b'2025-04-28T04:32:08Z'), (b'request-id', b'req_011CNaWCfAMwvKwNtLUtUdDv'), (b'anthropic-organization-id', b'961c62a8-661b-402f-b3ec-38f150bfa917'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Robots-Tag', b'none'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9373d580e958ed39-SJC'), (b'Content-Encoding', b'gzip')])
+2025-04-27 21:32:08,771 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-27 21:32:08,772 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-27 21:32:08,772 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-27 21:32:08,772 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-27 21:32:08,772 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-27 21:32:08,773 - anthropic._base_client - DEBUG - HTTP Response: POST https://api.anthropic.com/v1/messages "200 OK" Headers({'date': 'Mon, 28 Apr 2025 04:32:08 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'anthropic-ratelimit-input-tokens-limit': '20000', 'anthropic-ratelimit-input-tokens-remaining': '20000', 'anthropic-ratelimit-input-tokens-reset': '2025-04-28T04:32:08Z', 'anthropic-ratelimit-output-tokens-limit': '8000', 'anthropic-ratelimit-output-tokens-remaining': '8000', 'anthropic-ratelimit-output-tokens-reset': '2025-04-28T04:32:08Z', 'anthropic-ratelimit-requests-limit': '50', 'anthropic-ratelimit-requests-remaining': '49', 'anthropic-ratelimit-requests-reset': '2025-04-28T04:32:09Z', 'anthropic-ratelimit-tokens-limit': '28000', 'anthropic-ratelimit-tokens-remaining': '28000', 'anthropic-ratelimit-tokens-reset': '2025-04-28T04:32:08Z', 'request-id': 'req_011CNaWCfAMwvKwNtLUtUdDv', 'anthropic-organization-id': '961c62a8-661b-402f-b3ec-38f150bfa917', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'x-robots-tag': 'none', 'server': 'cloudflare', 'cf-ray': '9373d580e958ed39-SJC', 'content-encoding': 'gzip'})
+2025-04-27 21:32:08,773 - anthropic._base_client - DEBUG - request_id: req_011CNaWCfAMwvKwNtLUtUdDv
+2025-04-27 21:32:08,781 - agent - DEBUG - Tool decision raw response: 'TOOL: [Search]'
+2025-04-27 21:32:08,782 - agent - DEBUG - Parsed decision - Use Document: False, Use Search: True
+2025-04-27 21:32:08,782 - agent - DEBUG - Searching web...
+2025-04-27 21:32:08,794 - primp.utils - DEBUG - Loaded CA certs
+2025-04-27 21:32:08,799 - rquest.connect - DEBUG - starting new connection: https://html.duckduckgo.com/
+2025-04-27 21:32:08,799 - rquest.util.client.connect.dns - DEBUG - resolving html.duckduckgo.com
+2025-04-27 21:32:08,809 - rquest.util.client.connect.http - DEBUG - connecting to 52.250.42.157:443
+2025-04-27 21:32:08,838 - rquest.util.client.connect.http - DEBUG - connected to 52.250.42.157:443
+2025-04-27 21:32:08,870 - rquest.util.client.pool - DEBUG - pooling idle connection for PoolKey { uri: https://html.duckduckgo.com/, alpn_protos: None, network: default }
+2025-04-27 21:32:09,874 - cookie_store.cookie_store - DEBUG - inserting secure cookie 'kl'
+2025-04-27 21:32:09,875 - primp - INFO - response: https://html.duckduckgo.com/html 200
+2025-04-27 21:32:09,876 - duckduckgo_search.DDGS - DEBUG - _get_url() https://html.duckduckgo.com/html 200
+2025-04-27 21:32:09,886 - agent - DEBUG - Search returned 1319 characters
+2025-04-27 21:34:34,678 - httpcore.connection - DEBUG - close.started
+2025-04-27 21:34:34,680 - httpcore.connection - DEBUG - close.complete
+2025-04-27 21:34:39,730 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-04-27 21:34:39,730 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-27 21:34:39,732 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-04-27 21:34:39,849 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-04-27 21:34:39,941 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-04-27 21:34:40,039 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+2025-04-27 21:34:40,137 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-04-27 21:34:40,235 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+2025-04-27 21:34:40,333 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-04-27 21:34:40,431 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+2025-04-27 21:34:40,715 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-04-27 21:34:40,840 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6766
+2025-04-27 21:34:40,954 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6766
+2025-04-27 21:35:23,504 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-04-27 21:35:23,505 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-04-27 21:35:23,529 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=3 socket_options=None
+2025-04-27 21:35:23,587 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-04-27 21:35:23,624 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7861 local_address=None timeout=None socket_options=None
+2025-04-27 21:35:23,624 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1401a7110>
+2025-04-27 21:35:23,624 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-27 21:35:23,624 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-27 21:35:23,625 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-27 21:35:23,625 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-27 21:35:23,625 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-27 21:35:23,625 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 28 Apr 2025 04:35:23 GMT'), (b'server', b'uvicorn'), (b'content-length', b'4'), (b'content-type', b'application/json')])
+2025-04-27 21:35:23,625 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7861/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-27 21:35:23,625 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-27 21:35:23,625 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-27 21:35:23,625 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-27 21:35:23,625 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-27 21:35:23,626 - httpcore.connection - DEBUG - close.started
+2025-04-27 21:35:23,626 - httpcore.connection - DEBUG - close.complete
+2025-04-27 21:35:23,626 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7861 local_address=None timeout=3 socket_options=None
+2025-04-27 21:35:23,626 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1401a7920>
+2025-04-27 21:35:23,626 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'HEAD']>
+2025-04-27 21:35:23,626 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-27 21:35:23,626 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'HEAD']>
+2025-04-27 21:35:23,626 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-27 21:35:23,626 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'HEAD']>
+2025-04-27 21:35:23,635 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 28 Apr 2025 04:35:23 GMT'), (b'server', b'uvicorn'), (b'content-length', b'15026'), (b'content-type', b'text/html; charset=utf-8')])
+2025-04-27 21:35:23,635 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7861/ "HTTP/1.1 200 OK"
+2025-04-27 21:35:23,635 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'HEAD']>
+2025-04-27 21:35:23,635 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-27 21:35:23,635 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-27 21:35:23,635 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-27 21:35:23,635 - httpcore.connection - DEBUG - close.started
+2025-04-27 21:35:23,635 - httpcore.connection - DEBUG - close.complete
+2025-04-27 21:35:23,636 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-04-27 21:35:23,667 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x11859ba10>
+2025-04-27 21:35:23,667 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x118400550> server_hostname='api.gradio.app' timeout=3
+2025-04-27 21:35:23,725 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1185da4b0>
+2025-04-27 21:35:23,726 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-27 21:35:23,726 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-27 21:35:23,726 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-27 21:35:23,726 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-27 21:35:23,726 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-27 21:35:23,740 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/telemetry/gradio/launched HTTP/1.1" 200 0
+2025-04-27 21:35:23,754 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 28 Apr 2025 04:35:23 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'21'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*')])
+2025-04-27 21:35:23,754 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-27 21:35:23,754 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-27 21:35:23,754 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-27 21:35:23,754 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-27 21:35:23,754 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-27 21:35:23,754 - httpcore.connection - DEBUG - close.started
+2025-04-27 21:35:23,754 - httpcore.connection - DEBUG - close.complete
+2025-04-27 21:35:24,025 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/telemetry/gradio/initiated HTTP/1.1" 200 0
+2025-04-27 21:35:32,829 - agent - DEBUG - Received question: What was the diagnosis for the ORIF surgery?
+2025-04-27 21:35:32,832 - anthropic._base_client - DEBUG - Request options: {'method': 'post', 'url': '/v1/messages', 'timeout': Timeout(connect=5.0, read=600, write=600, pool=600), 'files': None, 'idempotency_key': 'stainless-python-retry-fa4fff39-009c-45c4-9412-9a0a268e6d83', 'json_data': {'max_tokens': 500, 'messages': [{'role': 'user', 'content': 'Question: "Decide which tool(s) are needed to answer this question: "What was the diagnosis for the ORIF surgery?".\n        Available tools:\n        - Document RAG (for clinical facts)\n        - Search (for public info)\n\n        Reply in format:\n        TOOL: [Document/Search/Both/All]\n        "\n\nDecide the best tool for answering it. Reply exactly with TOOL: [Document], TOOL: [Search], or TOOL: [Both]. No other text.'}], 'model': 'claude-3-7-sonnet-20250219', 'system': 'You are an expert clinical AI assistant. You must strictly reply in ONLY one of the following formats: TOOL: [Document], TOOL: [Search], or TOOL: [Both].\n\nFor questions about general medical information like recovery times, procedure durations, or standard practices, prefer TOOL: [Search].\nFor questions about specific medical cases or rare conditions found in the document database, use TOOL: [Document].\nFor questions that would benefit from both sources, use TOOL: [Both].\n\nNever explain, never say anything else.', 'temperature': 0}}
+2025-04-27 21:35:32,870 - anthropic._base_client - DEBUG - Sending HTTP Request: POST https://api.anthropic.com/v1/messages
+2025-04-27 21:35:32,870 - httpcore.connection - DEBUG - connect_tcp.started host='api.anthropic.com' port=443 local_address=None timeout=5.0 socket_options=[(65535, 8, True), (6, 257, 60), (6, 258, 5)]
+2025-04-27 21:35:32,883 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x140540cb0>
+2025-04-27 21:35:32,883 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x117622e50> server_hostname='api.anthropic.com' timeout=5.0
+2025-04-27 21:35:32,894 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x140540e90>
+2025-04-27 21:35:32,894 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-27 21:35:32,894 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-27 21:35:32,894 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-27 21:35:32,894 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-27 21:35:32,894 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-27 21:35:34,870 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 28 Apr 2025 04:35:34 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'anthropic-ratelimit-input-tokens-limit', b'20000'), (b'anthropic-ratelimit-input-tokens-remaining', b'20000'), (b'anthropic-ratelimit-input-tokens-reset', b'2025-04-28T04:35:34Z'), (b'anthropic-ratelimit-output-tokens-limit', b'8000'), (b'anthropic-ratelimit-output-tokens-remaining', b'8000'), (b'anthropic-ratelimit-output-tokens-reset', b'2025-04-28T04:35:34Z'), (b'anthropic-ratelimit-requests-limit', b'50'), (b'anthropic-ratelimit-requests-remaining', b'49'), (b'anthropic-ratelimit-requests-reset', b'2025-04-28T04:35:34Z'), (b'anthropic-ratelimit-tokens-limit', b'28000'), (b'anthropic-ratelimit-tokens-remaining', b'28000'), (b'anthropic-ratelimit-tokens-reset', b'2025-04-28T04:35:34Z'), (b'request-id', b'req_011CNaWTmt6eZdUsmiDBpSsa'), (b'anthropic-organization-id', b'961c62a8-661b-402f-b3ec-38f150bfa917'), (b'via', b'1.1 google'), (b'CF-Cache-Status', b'DYNAMIC'), (b'X-Robots-Tag', b'none'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9373da82ab3aed3f-SJC'), (b'Content-Encoding', b'gzip')])
+2025-04-27 21:35:34,871 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-27 21:35:34,871 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-27 21:35:34,872 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-27 21:35:34,872 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-27 21:35:34,872 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-27 21:35:34,873 - anthropic._base_client - DEBUG - HTTP Response: POST https://api.anthropic.com/v1/messages "200 OK" Headers({'date': 'Mon, 28 Apr 2025 04:35:34 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'anthropic-ratelimit-input-tokens-limit': '20000', 'anthropic-ratelimit-input-tokens-remaining': '20000', 'anthropic-ratelimit-input-tokens-reset': '2025-04-28T04:35:34Z', 'anthropic-ratelimit-output-tokens-limit': '8000', 'anthropic-ratelimit-output-tokens-remaining': '8000', 'anthropic-ratelimit-output-tokens-reset': '2025-04-28T04:35:34Z', 'anthropic-ratelimit-requests-limit': '50', 'anthropic-ratelimit-requests-remaining': '49', 'anthropic-ratelimit-requests-reset': '2025-04-28T04:35:34Z', 'anthropic-ratelimit-tokens-limit': '28000', 'anthropic-ratelimit-tokens-remaining': '28000', 'anthropic-ratelimit-tokens-reset': '2025-04-28T04:35:34Z', 'request-id': 'req_011CNaWTmt6eZdUsmiDBpSsa', 'anthropic-organization-id': '961c62a8-661b-402f-b3ec-38f150bfa917', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'x-robots-tag': 'none', 'server': 'cloudflare', 'cf-ray': '9373da82ab3aed3f-SJC', 'content-encoding': 'gzip'})
+2025-04-27 21:35:34,873 - anthropic._base_client - DEBUG - request_id: req_011CNaWTmt6eZdUsmiDBpSsa
+2025-04-27 21:35:34,884 - agent - DEBUG - Tool decision raw response: 'TOOL: [Document]'
+2025-04-27 21:35:34,884 - agent - DEBUG - Parsed decision - Use Document: True, Use Search: False
+2025-04-27 21:35:34,885 - agent - DEBUG - Retrieving from documents...
+2025-04-27 21:35:35,105 - agent - DEBUG - Document retrieval returned 5595 characters
+2025-04-27 21:37:17,006 - httpcore.connection - DEBUG - close.started
+2025-04-27 21:37:17,007 - httpcore.connection - DEBUG - close.complete
+2025-04-27 21:37:22,021 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-04-27 21:37:22,021 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-27 21:37:22,023 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-04-27 21:37:22,183 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-04-27 21:37:22,365 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-04-27 21:37:22,459 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+2025-04-27 21:37:22,551 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-04-27 21:37:22,646 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+2025-04-27 21:37:22,740 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-04-27 21:37:22,836 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+2025-04-27 21:37:23,126 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-04-27 21:37:23,244 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6766
+2025-04-27 21:37:23,362 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6766
+2025-04-27 21:38:06,564 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-04-27 21:38:06,565 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-04-27 21:38:06,573 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=3 socket_options=None
+2025-04-27 21:38:06,646 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-04-27 21:38:06,689 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/telemetry/gradio/initiated HTTP/1.1" 200 0
+2025-04-27 21:38:06,693 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7861 local_address=None timeout=None socket_options=None
+2025-04-27 21:38:06,693 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x142adb9b0>
+2025-04-27 21:38:06,693 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-27 21:38:06,693 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-27 21:38:06,693 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-27 21:38:06,694 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-27 21:38:06,694 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-27 21:38:06,694 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 28 Apr 2025 04:38:06 GMT'), (b'server', b'uvicorn'), (b'content-length', b'4'), (b'content-type', b'application/json')])
+2025-04-27 21:38:06,694 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7861/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-27 21:38:06,694 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-27 21:38:06,694 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-27 21:38:06,694 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-27 21:38:06,694 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-27 21:38:06,694 - httpcore.connection - DEBUG - close.started
+2025-04-27 21:38:06,694 - httpcore.connection - DEBUG - close.complete
+2025-04-27 21:38:06,695 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7861 local_address=None timeout=3 socket_options=None
+2025-04-27 21:38:06,695 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x168c9b500>
+2025-04-27 21:38:06,695 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'HEAD']>
+2025-04-27 21:38:06,695 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-27 21:38:06,695 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'HEAD']>
+2025-04-27 21:38:06,695 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-27 21:38:06,695 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'HEAD']>
+2025-04-27 21:38:06,703 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Mon, 28 Apr 2025 04:38:06 GMT'), (b'server', b'uvicorn'), (b'content-length', b'11567'), (b'content-type', b'text/html; charset=utf-8')])
+2025-04-27 21:38:06,703 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7861/ "HTTP/1.1 200 OK"
+2025-04-27 21:38:06,703 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'HEAD']>
+2025-04-27 21:38:06,703 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-27 21:38:06,703 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-27 21:38:06,703 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-27 21:38:06,704 - httpcore.connection - DEBUG - close.started
+2025-04-27 21:38:06,704 - httpcore.connection - DEBUG - close.complete
+2025-04-27 21:38:06,704 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-04-27 21:38:06,705 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x145730260>
+2025-04-27 21:38:06,705 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x142b5ecd0> server_hostname='api.gradio.app' timeout=3
+2025-04-27 21:38:06,762 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x145730470>
+2025-04-27 21:38:06,762 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-27 21:38:06,762 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-27 21:38:06,762 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-27 21:38:06,762 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-27 21:38:06,762 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-27 21:38:06,790 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 28 Apr 2025 04:38:06 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'21'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*')])
+2025-04-27 21:38:06,790 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-27 21:38:06,790 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-27 21:38:06,790 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-27 21:38:06,790 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-27 21:38:06,790 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-27 21:38:06,790 - httpcore.connection - DEBUG - close.started
+2025-04-27 21:38:06,790 - httpcore.connection - DEBUG - close.complete
+2025-04-27 21:38:06,805 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/telemetry/gradio/launched HTTP/1.1" 200 0
+2025-04-27 21:39:42,246 - agent - DEBUG - Received question: What surgery was performed for the Arthroscopic Meniscoplasty note?
+2025-04-27 21:39:42,250 - anthropic._base_client - DEBUG - Request options: {'method': 'post', 'url': '/v1/messages', 'timeout': Timeout(connect=5.0, read=600, write=600, pool=600), 'files': None, 'idempotency_key': 'stainless-python-retry-77381fe9-d944-4597-8a2d-72fdb0d0c98f', 'json_data': {'max_tokens': 500, 'messages': [{'role': 'user', 'content': 'Question: "Decide which tool(s) are needed to answer this question: "What surgery was performed for the Arthroscopic Meniscoplasty note?".\n        Available tools:\n        - Document RAG (for clinical facts)\n        - Search (for public info)\n\n        Reply in format:\n        TOOL: [Document/Search/Both/All]\n        "\n\nDecide the best tool for answering it. Reply exactly with TOOL: [Document], TOOL: [Search], or TOOL: [Both]. No other text.'}], 'model': 'claude-3-7-sonnet-20250219', 'system': 'You are an expert clinical AI assistant. You must strictly reply in ONLY one of the following formats: TOOL: [Document], TOOL: [Search], or TOOL: [Both].\n\nFor questions about general medical information like recovery times, procedure durations, or standard practices, prefer TOOL: [Search].\nFor questions about specific medical cases or rare conditions found in the document database, use TOOL: [Document].\nFor questions that would benefit from both sources, use TOOL: [Both].\n\nNever explain, never say anything else.', 'temperature': 0}}
+2025-04-27 21:39:42,283 - anthropic._base_client - DEBUG - Sending HTTP Request: POST https://api.anthropic.com/v1/messages
+2025-04-27 21:39:42,283 - httpcore.connection - DEBUG - connect_tcp.started host='api.anthropic.com' port=443 local_address=None timeout=5.0 socket_options=[(65535, 8, True), (6, 257, 60), (6, 258, 5)]
+2025-04-27 21:39:42,299 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x169004a40>
+2025-04-27 21:39:42,299 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x1418aeed0> server_hostname='api.anthropic.com' timeout=5.0
+2025-04-27 21:39:42,309 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x1690042f0>
+2025-04-27 21:39:42,309 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-27 21:39:42,309 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-27 21:39:42,309 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-27 21:39:42,309 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-27 21:39:42,309 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-27 21:39:43,102 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 28 Apr 2025 04:39:42 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'anthropic-ratelimit-input-tokens-limit', b'20000'), (b'anthropic-ratelimit-input-tokens-remaining', b'20000'), (b'anthropic-ratelimit-input-tokens-reset', b'2025-04-28T04:39:43Z'), (b'anthropic-ratelimit-output-tokens-limit', b'8000'), (b'anthropic-ratelimit-output-tokens-remaining', b'8000'), (b'anthropic-ratelimit-output-tokens-reset', b'2025-04-28T04:39:42Z'), (b'anthropic-ratelimit-requests-limit', b'50'), (b'anthropic-ratelimit-requests-remaining', b'49'), (b'anthropic-ratelimit-requests-reset', b'2025-04-28T04:39:43Z'), (b'anthropic-ratelimit-tokens-limit', b'28000'), (b'anthropic-ratelimit-tokens-remaining', b'28000'), (b'anthropic-ratelimit-tokens-reset', b'2025-04-28T04:39:42Z'), (b'request-id', b'req_011CNaWnACH6BGQesS1XTtMy'), (b'anthropic-organization-id', b'961c62a8-661b-402f-b3ec-38f150bfa917'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Robots-Tag', b'none'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9373e0997e1ccf1a-SJC'), (b'Content-Encoding', b'gzip')])
+2025-04-27 21:39:43,104 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-27 21:39:43,104 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-27 21:39:43,105 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-27 21:39:43,105 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-27 21:39:43,105 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-27 21:39:43,105 - anthropic._base_client - DEBUG - HTTP Response: POST https://api.anthropic.com/v1/messages "200 OK" Headers({'date': 'Mon, 28 Apr 2025 04:39:42 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'anthropic-ratelimit-input-tokens-limit': '20000', 'anthropic-ratelimit-input-tokens-remaining': '20000', 'anthropic-ratelimit-input-tokens-reset': '2025-04-28T04:39:43Z', 'anthropic-ratelimit-output-tokens-limit': '8000', 'anthropic-ratelimit-output-tokens-remaining': '8000', 'anthropic-ratelimit-output-tokens-reset': '2025-04-28T04:39:42Z', 'anthropic-ratelimit-requests-limit': '50', 'anthropic-ratelimit-requests-remaining': '49', 'anthropic-ratelimit-requests-reset': '2025-04-28T04:39:43Z', 'anthropic-ratelimit-tokens-limit': '28000', 'anthropic-ratelimit-tokens-remaining': '28000', 'anthropic-ratelimit-tokens-reset': '2025-04-28T04:39:42Z', 'request-id': 'req_011CNaWnACH6BGQesS1XTtMy', 'anthropic-organization-id': '961c62a8-661b-402f-b3ec-38f150bfa917', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'x-robots-tag': 'none', 'server': 'cloudflare', 'cf-ray': '9373e0997e1ccf1a-SJC', 'content-encoding': 'gzip'})
+2025-04-27 21:39:43,106 - anthropic._base_client - DEBUG - request_id: req_011CNaWnACH6BGQesS1XTtMy
+2025-04-27 21:39:43,119 - agent - DEBUG - Tool decision raw response: 'TOOL: [Document]'
+2025-04-27 21:39:43,120 - agent - DEBUG - Parsed decision - Use Document: True, Use Search: False
+2025-04-27 21:39:43,120 - agent - DEBUG - Retrieving from documents...
+2025-04-27 21:39:43,651 - agent - DEBUG - Document retrieval returned 8878 characters
+2025-04-27 21:42:48,056 - agent - DEBUG - Received question: What was the diagnosis for the ORIF surgery?
+2025-04-27 21:42:48,058 - anthropic._base_client - DEBUG - Request options: {'method': 'post', 'url': '/v1/messages', 'timeout': Timeout(connect=5.0, read=600, write=600, pool=600), 'files': None, 'idempotency_key': 'stainless-python-retry-91105f91-14c8-48f6-a5ad-fa0e9781cb16', 'json_data': {'max_tokens': 500, 'messages': [{'role': 'user', 'content': 'Question: "Decide which tool(s) are needed to answer this question: "What was the diagnosis for the ORIF surgery?".\n        Available tools:\n        - Document RAG (for clinical facts)\n        - Search (for public info)\n\n        Reply in format:\n        TOOL: [Document/Search/Both/All]\n        "\n\nDecide the best tool for answering it. Reply exactly with TOOL: [Document], TOOL: [Search], or TOOL: [Both]. No other text.'}], 'model': 'claude-3-7-sonnet-20250219', 'system': 'You are an expert clinical AI assistant. You must strictly reply in ONLY one of the following formats: TOOL: [Document], TOOL: [Search], or TOOL: [Both].\n\nFor questions about general medical information like recovery times, procedure durations, or standard practices, prefer TOOL: [Search].\nFor questions about specific medical cases or rare conditions found in the document database, use TOOL: [Document].\nFor questions that would benefit from both sources, use TOOL: [Both].\n\nNever explain, never say anything else.', 'temperature': 0}}
+2025-04-27 21:42:48,059 - anthropic._base_client - DEBUG - Sending HTTP Request: POST https://api.anthropic.com/v1/messages
+2025-04-27 21:42:48,059 - httpcore.connection - DEBUG - close.started
+2025-04-27 21:42:48,060 - httpcore.connection - DEBUG - close.complete
+2025-04-27 21:42:48,060 - httpcore.connection - DEBUG - connect_tcp.started host='api.anthropic.com' port=443 local_address=None timeout=5.0 socket_options=[(65535, 8, True), (6, 257, 60), (6, 258, 5)]
+2025-04-27 21:42:48,076 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x142cb5160>
+2025-04-27 21:42:48,077 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x1418aeed0> server_hostname='api.anthropic.com' timeout=5.0
+2025-04-27 21:42:48,089 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x142cb49b0>
+2025-04-27 21:42:48,089 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-27 21:42:48,090 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-27 21:42:48,090 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-27 21:42:48,090 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-27 21:42:48,090 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-27 21:42:49,890 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 28 Apr 2025 04:42:49 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'anthropic-ratelimit-input-tokens-limit', b'20000'), (b'anthropic-ratelimit-input-tokens-remaining', b'20000'), (b'anthropic-ratelimit-input-tokens-reset', b'2025-04-28T04:42:49Z'), (b'anthropic-ratelimit-output-tokens-limit', b'8000'), (b'anthropic-ratelimit-output-tokens-remaining', b'8000'), (b'anthropic-ratelimit-output-tokens-reset', b'2025-04-28T04:42:49Z'), (b'anthropic-ratelimit-requests-limit', b'50'), (b'anthropic-ratelimit-requests-remaining', b'49'), (b'anthropic-ratelimit-requests-reset', b'2025-04-28T04:42:49Z'), (b'anthropic-ratelimit-tokens-limit', b'28000'), (b'anthropic-ratelimit-tokens-remaining', b'28000'), (b'anthropic-ratelimit-tokens-reset', b'2025-04-28T04:42:49Z'), (b'request-id', b'req_011CNaX1rXHupjdqrCZSM1TP'), (b'anthropic-organization-id', b'961c62a8-661b-402f-b3ec-38f150bfa917'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Robots-Tag', b'none'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9373e5229e42ed38-SJC'), (b'Content-Encoding', b'gzip')])
+2025-04-27 21:42:49,891 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-27 21:42:49,892 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-27 21:42:49,892 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-27 21:42:49,892 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-27 21:42:49,892 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-27 21:42:49,892 - anthropic._base_client - DEBUG - HTTP Response: POST https://api.anthropic.com/v1/messages "200 OK" Headers({'date': 'Mon, 28 Apr 2025 04:42:49 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'anthropic-ratelimit-input-tokens-limit': '20000', 'anthropic-ratelimit-input-tokens-remaining': '20000', 'anthropic-ratelimit-input-tokens-reset': '2025-04-28T04:42:49Z', 'anthropic-ratelimit-output-tokens-limit': '8000', 'anthropic-ratelimit-output-tokens-remaining': '8000', 'anthropic-ratelimit-output-tokens-reset': '2025-04-28T04:42:49Z', 'anthropic-ratelimit-requests-limit': '50', 'anthropic-ratelimit-requests-remaining': '49', 'anthropic-ratelimit-requests-reset': '2025-04-28T04:42:49Z', 'anthropic-ratelimit-tokens-limit': '28000', 'anthropic-ratelimit-tokens-remaining': '28000', 'anthropic-ratelimit-tokens-reset': '2025-04-28T04:42:49Z', 'request-id': 'req_011CNaX1rXHupjdqrCZSM1TP', 'anthropic-organization-id': '961c62a8-661b-402f-b3ec-38f150bfa917', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'x-robots-tag': 'none', 'server': 'cloudflare', 'cf-ray': '9373e5229e42ed38-SJC', 'content-encoding': 'gzip'})
+2025-04-27 21:42:49,893 - anthropic._base_client - DEBUG - request_id: req_011CNaX1rXHupjdqrCZSM1TP
+2025-04-27 21:42:49,893 - agent - DEBUG - Tool decision raw response: 'TOOL: [Document]'
+2025-04-27 21:42:49,893 - agent - DEBUG - Parsed decision - Use Document: True, Use Search: False
+2025-04-27 21:42:49,893 - agent - DEBUG - Retrieving from documents...
+2025-04-27 21:42:50,317 - agent - DEBUG - Document retrieval returned 5595 characters
+2025-04-27 21:43:31,235 - agent - DEBUG - Received question: What is the average lifespan of a knee prosthesis after total knee arthroplasty?
+2025-04-27 21:43:31,236 - anthropic._base_client - DEBUG - Request options: {'method': 'post', 'url': '/v1/messages', 'timeout': Timeout(connect=5.0, read=600, write=600, pool=600), 'files': None, 'idempotency_key': 'stainless-python-retry-0af2d676-3ece-4cbe-8ad7-961cdb5df218', 'json_data': {'max_tokens': 500, 'messages': [{'role': 'user', 'content': 'Question: "Decide which tool(s) are needed to answer this question: "What is the average lifespan of a knee prosthesis after total knee arthroplasty?".\n        Available tools:\n        - Document RAG (for clinical facts)\n        - Search (for public info)\n\n        Reply in format:\n        TOOL: [Document/Search/Both/All]\n        "\n\nDecide the best tool for answering it. Reply exactly with TOOL: [Document], TOOL: [Search], or TOOL: [Both]. No other text.'}], 'model': 'claude-3-7-sonnet-20250219', 'system': 'You are an expert clinical AI assistant. You must strictly reply in ONLY one of the following formats: TOOL: [Document], TOOL: [Search], or TOOL: [Both].\n\nFor questions about general medical information like recovery times, procedure durations, or standard practices, prefer TOOL: [Search].\nFor questions about specific medical cases or rare conditions found in the document database, use TOOL: [Document].\nFor questions that would benefit from both sources, use TOOL: [Both].\n\nNever explain, never say anything else.', 'temperature': 0}}
+2025-04-27 21:43:31,237 - anthropic._base_client - DEBUG - Sending HTTP Request: POST https://api.anthropic.com/v1/messages
+2025-04-27 21:43:31,237 - httpcore.connection - DEBUG - close.started
+2025-04-27 21:43:31,238 - httpcore.connection - DEBUG - close.complete
+2025-04-27 21:43:31,238 - httpcore.connection - DEBUG - connect_tcp.started host='api.anthropic.com' port=443 local_address=None timeout=5.0 socket_options=[(65535, 8, True), (6, 257, 60), (6, 258, 5)]
+2025-04-27 21:43:31,248 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x142cb7b90>
+2025-04-27 21:43:31,248 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x1418aeed0> server_hostname='api.anthropic.com' timeout=5.0
+2025-04-27 21:43:31,263 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x142cb67e0>
+2025-04-27 21:43:31,263 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-04-27 21:43:31,264 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-27 21:43:31,264 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-04-27 21:43:31,264 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-27 21:43:31,264 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-04-27 21:43:32,481 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 28 Apr 2025 04:43:32 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'anthropic-ratelimit-input-tokens-limit', b'20000'), (b'anthropic-ratelimit-input-tokens-remaining', b'20000'), (b'anthropic-ratelimit-input-tokens-reset', b'2025-04-28T04:43:32Z'), (b'anthropic-ratelimit-output-tokens-limit', b'8000'), (b'anthropic-ratelimit-output-tokens-remaining', b'8000'), (b'anthropic-ratelimit-output-tokens-reset', b'2025-04-28T04:43:32Z'), (b'anthropic-ratelimit-requests-limit', b'50'), (b'anthropic-ratelimit-requests-remaining', b'49'), (b'anthropic-ratelimit-requests-reset', b'2025-04-28T04:43:32Z'), (b'anthropic-ratelimit-tokens-limit', b'28000'), (b'anthropic-ratelimit-tokens-remaining', b'28000'), (b'anthropic-ratelimit-tokens-reset', b'2025-04-28T04:43:32Z'), (b'request-id', b'req_011CNaX535sbAUkxd4s5KgDW'), (b'anthropic-organization-id', b'961c62a8-661b-402f-b3ec-38f150bfa917'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Robots-Tag', b'none'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9373e6306c9b7aca-SJC'), (b'Content-Encoding', b'gzip')])
+2025-04-27 21:43:32,482 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-27 21:43:32,483 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-04-27 21:43:32,483 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-27 21:43:32,483 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-27 21:43:32,483 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-27 21:43:32,484 - anthropic._base_client - DEBUG - HTTP Response: POST https://api.anthropic.com/v1/messages "200 OK" Headers({'date': 'Mon, 28 Apr 2025 04:43:32 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'anthropic-ratelimit-input-tokens-limit': '20000', 'anthropic-ratelimit-input-tokens-remaining': '20000', 'anthropic-ratelimit-input-tokens-reset': '2025-04-28T04:43:32Z', 'anthropic-ratelimit-output-tokens-limit': '8000', 'anthropic-ratelimit-output-tokens-remaining': '8000', 'anthropic-ratelimit-output-tokens-reset': '2025-04-28T04:43:32Z', 'anthropic-ratelimit-requests-limit': '50', 'anthropic-ratelimit-requests-remaining': '49', 'anthropic-ratelimit-requests-reset': '2025-04-28T04:43:32Z', 'anthropic-ratelimit-tokens-limit': '28000', 'anthropic-ratelimit-tokens-remaining': '28000', 'anthropic-ratelimit-tokens-reset': '2025-04-28T04:43:32Z', 'request-id': 'req_011CNaX535sbAUkxd4s5KgDW', 'anthropic-organization-id': '961c62a8-661b-402f-b3ec-38f150bfa917', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'x-robots-tag': 'none', 'server': 'cloudflare', 'cf-ray': '9373e6306c9b7aca-SJC', 'content-encoding': 'gzip'})
+2025-04-27 21:43:32,484 - anthropic._base_client - DEBUG - request_id: req_011CNaX535sbAUkxd4s5KgDW
+2025-04-27 21:43:32,484 - agent - DEBUG - Tool decision raw response: 'TOOL: [Search]'
+2025-04-27 21:43:32,484 - agent - DEBUG - Parsed decision - Use Document: False, Use Search: True
+2025-04-27 21:43:32,485 - agent - DEBUG - Searching web...
+2025-04-27 21:43:32,490 - primp.utils - DEBUG - Loaded CA certs
+2025-04-27 21:43:32,492 - rquest.connect - DEBUG - starting new connection: https://lite.duckduckgo.com/
+2025-04-27 21:43:32,492 - rquest.util.client.connect.dns - DEBUG - resolving lite.duckduckgo.com
+2025-04-27 21:43:32,508 - rquest.util.client.connect.http - DEBUG - connecting to 52.250.42.157:443
+2025-04-27 21:43:32,539 - rquest.util.client.connect.http - DEBUG - connected to 52.250.42.157:443
+2025-04-27 21:43:32,570 - rquest.util.client.pool - DEBUG - pooling idle connection for PoolKey { uri: https://lite.duckduckgo.com/, alpn_protos: None, network: default }
+2025-04-27 21:43:33,508 - cookie_store.cookie_store - DEBUG - inserting secure cookie 'kl'
+2025-04-27 21:43:33,509 - primp - INFO - response: https://lite.duckduckgo.com/lite/ 200
+2025-04-27 21:43:33,510 - duckduckgo_search.DDGS - DEBUG - _get_url() https://lite.duckduckgo.com/lite/ 200
+2025-04-27 21:43:33,514 - agent - DEBUG - Search returned 1530 characters
+2025-04-27 21:45:15,027 - httpcore.connection - DEBUG - close.started
+2025-04-27 21:45:15,028 - httpcore.connection - DEBUG - close.complete

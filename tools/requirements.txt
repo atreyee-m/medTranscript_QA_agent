@@ -1,0 +1,9 @@
+openai
+requests
+python-dotenv
+faiss-cpu
+sentence-transformers
+pandas
+duckduckgo_search
+gradio
+anthropic
