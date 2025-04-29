@@ -1,3 +1,13 @@
+---
+title: "MedTranscript QA Agent"
+emoji: 🩺
+colorFrom: indigo
+colorTo: blue
+sdk: gradio
+sdk_version: 3.50.2
+app_file: app.py
+pinned: false
+---
 # Healthcare Tool-Using AI Agent
 
 A medical Q&A system that intelligently routes queries between document retrieval and web search to provide accurate healthcare information.
