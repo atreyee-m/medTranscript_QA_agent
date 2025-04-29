@@ -757,3 +757,71 @@
 2025-04-28 19:42:37,221 - primp - INFO - response: https://lite.duckduckgo.com/lite/ 200
 2025-04-28 19:42:37,222 - duckduckgo_search.DDGS - DEBUG - _get_url() https://lite.duckduckgo.com/lite/ 200
 2025-04-28 19:42:37,232 - agent - DEBUG - Search returned 1523 characters
+2025-04-28 19:47:12,130 - httpcore.connection - DEBUG - close.started
+2025-04-28 19:47:12,131 - httpcore.connection - DEBUG - close.complete
+2025-04-28 19:56:43,529 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-04-28 19:56:43,530 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-28 19:56:43,532 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-04-28 19:56:44,278 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-04-28 19:56:44,380 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-04-28 19:56:44,478 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+2025-04-28 19:56:44,572 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-04-28 19:56:44,670 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+2025-04-28 19:56:44,775 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-04-28 19:56:44,928 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+2025-04-28 19:56:45,242 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-04-28 19:56:45,362 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6766
+2025-04-28 19:56:45,479 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6766
+2025-04-28 19:57:28,480 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-04-28 19:57:28,481 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-04-28 19:57:28,494 - httpcore.connection - DEBUG - connect_tcp.started host='api.gradio.app' port=443 local_address=None timeout=3 socket_options=None
+2025-04-28 19:57:28,557 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-04-28 19:57:28,598 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7861 local_address=None timeout=None socket_options=None
+2025-04-28 19:57:28,598 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x150efe4b0>
+2025-04-28 19:57:28,598 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-28 19:57:28,598 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-28 19:57:28,599 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-28 19:57:28,599 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-28 19:57:28,599 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-28 19:57:28,599 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Tue, 29 Apr 2025 02:57:28 GMT'), (b'server', b'uvicorn'), (b'content-length', b'4'), (b'content-type', b'application/json')])
+2025-04-28 19:57:28,599 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7861/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-28 19:57:28,599 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-28 19:57:28,599 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-28 19:57:28,599 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-28 19:57:28,599 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-28 19:57:28,599 - httpcore.connection - DEBUG - close.started
+2025-04-28 19:57:28,599 - httpcore.connection - DEBUG - close.complete
+2025-04-28 19:57:28,600 - httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=7861 local_address=None timeout=3 socket_options=None
+2025-04-28 19:57:28,600 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x15309b2c0>
+2025-04-28 19:57:28,600 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'HEAD']>
+2025-04-28 19:57:28,600 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-28 19:57:28,600 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'HEAD']>
+2025-04-28 19:57:28,600 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-28 19:57:28,600 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'HEAD']>
+2025-04-28 19:57:28,606 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Tue, 29 Apr 2025 02:57:28 GMT'), (b'server', b'uvicorn'), (b'content-length', b'11554'), (b'content-type', b'text/html; charset=utf-8')])
+2025-04-28 19:57:28,606 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7861/ "HTTP/1.1 200 OK"
+2025-04-28 19:57:28,606 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'HEAD']>
+2025-04-28 19:57:28,606 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-28 19:57:28,606 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-28 19:57:28,606 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-28 19:57:28,606 - httpcore.connection - DEBUG - close.started
+2025-04-28 19:57:28,606 - httpcore.connection - DEBUG - close.complete
+2025-04-28 19:57:28,607 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-04-28 19:57:28,627 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x134095e20>
+2025-04-28 19:57:28,627 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x13245e0d0> server_hostname='api.gradio.app' timeout=3
+2025-04-28 19:57:28,636 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/telemetry/gradio/initiated HTTP/1.1" 200 0
+2025-04-28 19:57:28,678 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x13246df10>
+2025-04-28 19:57:28,678 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2025-04-28 19:57:28,678 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-04-28 19:57:28,678 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2025-04-28 19:57:28,679 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-04-28 19:57:28,679 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2025-04-28 19:57:28,706 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 29 Apr 2025 02:57:28 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'21'), (b'Connection', b'keep-alive'), (b'Server', b'nginx/1.18.0'), (b'Access-Control-Allow-Origin', b'*')])
+2025-04-28 19:57:28,706 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-28 19:57:28,706 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2025-04-28 19:57:28,706 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-04-28 19:57:28,706 - httpcore.http11 - DEBUG - response_closed.started
+2025-04-28 19:57:28,706 - httpcore.http11 - DEBUG - response_closed.complete
+2025-04-28 19:57:28,706 - httpcore.connection - DEBUG - close.started
+2025-04-28 19:57:28,706 - httpcore.connection - DEBUG - close.complete
+2025-04-28 19:57:28,746 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/telemetry/gradio/launched HTTP/1.1" 200 0

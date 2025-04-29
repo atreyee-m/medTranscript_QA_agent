@@ -10,7 +10,7 @@ pinned: false
 ---
 # MedTranscript QA Agent
 
-A medical Q&A system that intelligently routes queries between document retrieval and web search to provide accurate healthcare information.
+A medical transcript Q&A system that intelligently routes queries between document retrieval and web search to provide accurate healthcare information. Currently works on MIMIC III transcripts.
 
 ## Overview
 
