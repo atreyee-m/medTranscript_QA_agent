@@ -21,7 +21,7 @@ custom_css = """
 """
 
 with gr.Blocks(css=custom_css, theme=gr.themes.Base()) as demo:
-    gr.Markdown("# Medical transcription QA agent")
+    gr.Markdown("# Medical transcripts QA agent")
     gr.Markdown("An agent that uses document retrieval and live web search to answer questions on medical transcripts.")
     
     with gr.Row():
