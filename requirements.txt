@@ -1,3 +1,4 @@
+anthropic
 openai
 requests
 python-dotenv
