@@ -21,8 +21,8 @@ custom_css = """
 """
 
 with gr.Blocks(css=custom_css, theme=gr.themes.Base()) as demo:
-    gr.Markdown("# Healthcare Tool-Using AI Agent")
-    gr.Markdown("An agent that uses document retrieval, live web search, and calculation to answer clinical healthcare questions.")
+    gr.Markdown("# Medical transcription QA agent")
+    gr.Markdown("An agent that uses document retrieval and live web search to answer questions on medical transcripts.")
     
     with gr.Row():
         with gr.Column(scale=1):

@@ -8,7 +8,7 @@ sdk_version: 5.27.1
 app_file: app.py
 pinned: false
 ---
-# Healthcare Tool-Using AI Agent
+# MedTranscript QA Agent
 
 A medical Q&A system that intelligently routes queries between document retrieval and web search to provide accurate healthcare information.
 
@@ -32,14 +32,14 @@ The agent makes intelligent decisions about which tool to use based on the query
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/healthcare-tool-agent.git
-cd healthcare-tool-agent
+git clone https://github.com/atreyee-m/medTranscript_QA_agent.git
+cd medTranscript_QA_agent
 ```
 
 2. Create a virtual environment and install dependencies:
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  
 pip install -r requirements.txt
 ```
 
