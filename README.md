@@ -7,6 +7,25 @@ sdk: gradio
 sdk_version: 5.27.1
 app_file: app.py
 pinned: false
+tags:
+  - medical
+  - healthcare
+  - transcription
+  - question-answering
+  - rag
+  - anthropic
+  - claude-3
+  - faiss
+  - vector-search
+  - sentence-transformers
+  - gradio
+  - duckduckgo
+  - web-search
+  - multi-tool
+  - agent
+  - tool-selection
+  - mimic-iii
+  - clinical
 ---
 # MedTranscript QA Agent
 
@@ -115,11 +134,9 @@ The agent uses Claude 3.7 Sonnet to:
 - Improve document chunking for more precise retrieval
 - Implement a feedback mechanism to improve tool selection over time
 
-## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
 
-- Medical transcription samples from [MTSamples](https://www.mtsamples.com/)
+- Medical transcription samples from Kaggle (deided from MIMIC III)
 - Built with Claude 3.7 Sonnet by Anthropic
