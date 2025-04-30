@@ -825,6 +825,7 @@
 2025-04-28 19:57:28,706 - httpcore.connection - DEBUG - close.started
 2025-04-28 19:57:28,706 - httpcore.connection - DEBUG - close.complete
 2025-04-28 19:57:28,746 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/telemetry/gradio/launched HTTP/1.1" 200 0
+<<<<<<< HEAD
 2025-04-28 20:30:35,646 - agent - DEBUG - Received question: What was the diagnosis for the ORIF surgery?
 2025-04-28 20:30:35,654 - anthropic._base_client - DEBUG - Request options: {'method': 'post', 'url': '/v1/messages', 'timeout': Timeout(connect=5.0, read=600, write=600, pool=600), 'files': None, 'idempotency_key': 'stainless-python-retry-a6fb3d48-5230-4beb-a3a0-650f3824a93b', 'json_data': {'max_tokens': 500, 'messages': [{'role': 'user', 'content': 'Question: "Decide which tool(s) are needed to answer this question: "What was the diagnosis for the ORIF surgery?".\n        Available tools:\n        - Document RAG (for clinical facts)\n        - Search (for public info)\n\n        Reply in format:\n        TOOL: [Document/Search/Both/All]\n        "\n\nDecide the best tool for answering it. Reply exactly with TOOL: [Document], TOOL: [Search], or TOOL: [Both]. No other text.'}], 'model': 'claude-3-7-sonnet-20250219', 'system': 'You are an expert clinical AI assistant. You must strictly reply in ONLY one of the following formats: TOOL: [Document], TOOL: [Search], or TOOL: [Both].\n\nFor questions about general medical information like recovery times, procedure durations, or standard practices, prefer TOOL: [Search].\nFor questions about specific medical cases or rare conditions found in the document database, use TOOL: [Document].\nFor questions that would benefit from both sources, use TOOL: [Both].\n\nNever explain, never say anything else.', 'temperature': 0}}
 2025-04-28 20:30:35,683 - anthropic._base_client - DEBUG - Sending HTTP Request: POST https://api.anthropic.com/v1/messages
@@ -884,3 +885,5 @@
 2025-04-28 20:31:39,790 - primp - INFO - response: https://lite.duckduckgo.com/lite/ 200
 2025-04-28 20:31:39,793 - duckduckgo_search.DDGS - DEBUG - _get_url() https://lite.duckduckgo.com/lite/ 200
 2025-04-28 20:31:39,800 - agent - DEBUG - Search returned 1319 characters
+=======
+>>>>>>> 3579580 (added a validation set)
