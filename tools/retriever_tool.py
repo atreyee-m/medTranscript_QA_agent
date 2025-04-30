@@ -83,6 +83,36 @@ class DocumentRetriever:
             faiss.normalize_L2(batch_embeddings)
             self.index.add(np.array(batch_embeddings))
 
+    # def query(self, question, include_metadata=True):
+    #     try:
+    #         q_embedding = self.model.encode([question])
+    #         faiss.normalize_L2(q_embedding)
+            
+    #         k = min(self.top_k * 2, len(self.texts))
+    #         scores, indices = self.index.search(np.array(q_embedding), k)
+            
+    #         results = []
+    #         for i, (score, idx) in enumerate(zip(scores[0], indices[0])):
+    #             if idx != -1 and score >= self.similarity_threshold and i < self.top_k:
+    #                 doc_text = self.texts[idx]
+                    
+    #                 if include_metadata and idx < len(self.metadata):
+    #                     meta = self.metadata[idx]
+    #                     doc_info = f"[Document {i+1}] (Score: {score:.2f}, Specialty: {meta.get('medical_specialty', 'Unknown')}, Sample: {meta.get('sample_name', 'Unknown')})\n\n{doc_text}"
+    #                 else:
+    #                     doc_info = f"[Document {i+1}] (Score: {score:.2f})\n\n{doc_text}"
+                    
+    #                 results.append(doc_info)
+            
+    #         gc.collect()
+            
+    #         if not results:
+    #             return "No relevant documents found for this query."
+            
+    #         return "\n\n" + "-"*80 + "\n\n".join(results)
+    #     except Exception as e:
+    #         return f"Error during retrieval: {str(e)}"
+    
     def query(self, question, include_metadata=True):
         try:
             q_embedding = self.model.encode([question])
@@ -98,7 +128,9 @@ class DocumentRetriever:
                     
                     if include_metadata and idx < len(self.metadata):
                         meta = self.metadata[idx]
-                        doc_info = f"[Document {i+1}] (Score: {score:.2f}, Specialty: {meta.get('medical_specialty', 'Unknown')}, Sample: {meta.get('sample_name', 'Unknown')})\n\n{doc_text}"
+                        # Add description to the output
+                        description = meta.get('description', 'No description available')
+                        doc_info = f"[Document {i+1}] (Score: {score:.2f})\nSpecialty: {meta.get('medical_specialty', 'Unknown')}\nSample: {meta.get('sample_name', 'Unknown')}\nDescription: {description}\n\n{doc_text}"
                     else:
                         doc_info = f"[Document {i+1}] (Score: {score:.2f})\n\n{doc_text}"
                     
