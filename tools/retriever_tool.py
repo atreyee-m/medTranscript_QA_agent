@@ -7,7 +7,7 @@ import os
 import time
 from sentence_transformers import SentenceTransformer
 
-class Retriever:
+class DocumentRetriever:
     def __init__(self, csv_path="data/mtsamples_surgery.csv", top_k=3, similarity_threshold=0.2, batch_size=8):
         self.model = SentenceTransformer('all-MiniLM-L6-v2')
         self.dimension = self.model.get_sentence_embedding_dimension()
@@ -77,7 +77,6 @@ class Retriever:
         if new_metadata:
             self.metadata.extend(new_metadata)
         
-        # Encode and add to index
         for i in range(0, len(processed_texts), self.batch_size):
             batch = processed_texts[i:i+min(self.batch_size, len(processed_texts)-i)]
             batch_embeddings = self.model.encode(batch, show_progress_bar=False)

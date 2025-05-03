@@ -1,0 +1,81 @@
+2025-05-02 18:14:51,276 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-05-02 18:14:51,276 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-02 18:15:40,513 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-05-02 18:15:40,514 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-05-02 18:15:42,134 - __main__ - INFO - Starting Medical Transcript Q&A System...
+2025-05-02 18:15:42,134 - __main__ - INFO - API Key present: Yes
+2025-05-02 18:15:42,217 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7861/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-02 18:15:42,218 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-02 18:15:42,226 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7861/ "HTTP/1.1 200 OK"
+2025-05-02 18:16:27,475 - __main__ - INFO - User message: Was any meniscus tear found in the Arthroscopic Meniscoplasty?
+
+
+2025-05-02 18:16:27,475 - __main__ - INFO - Current history length: 0
+2025-05-02 18:16:27,475 - __main__ - INFO - Current conversation ID: None
+2025-05-02 18:16:27,578 - __main__ - INFO - Processing user message: Was any meniscus tear found in the Arthroscopic Me...
+2025-05-02 18:16:27,578 - __main__ - INFO - Created new conversation with ID: f85e94c5-9bb8-43aa-8731-0fe380de9859
+2025-05-02 18:16:27,578 - __main__ - INFO - Processing message for conversation f85e94c5-9bb8-43aa-8731-0fe380de9859: Was any meniscus tear found in the Arthroscopic Meniscoplasty?
+2025-05-02 18:16:28,519 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-02 18:16:29,504 - primp - INFO - response: https://lite.duckduckgo.com/lite/ 200
+2025-05-02 18:16:36,709 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-02 18:16:36,714 - __main__ - INFO - Thread f85e94c5-9bb8-43aa-8731-0fe380de9859 now has 2 messages
+2025-05-02 18:16:53,596 - __main__ - INFO - User message: what are the usual surgeries for these
+
+2025-05-02 18:16:53,596 - __main__ - INFO - Current history length: 2
+2025-05-02 18:16:53,597 - __main__ - INFO - Current conversation ID: f85e94c5-9bb8-43aa-8731-0fe380de9859
+2025-05-02 18:16:53,648 - __main__ - INFO - Processing user message: what are the usual surgeries for these...
+2025-05-02 18:16:53,649 - __main__ - INFO - Processing message for conversation f85e94c5-9bb8-43aa-8731-0fe380de9859: what are the usual surgeries for these
+2025-05-02 18:16:55,113 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-02 18:16:55,959 - primp - INFO - response: https://html.duckduckgo.com/html 200
+2025-05-02 18:17:04,935 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-02 18:17:04,941 - __main__ - INFO - Thread f85e94c5-9bb8-43aa-8731-0fe380de9859 now has 4 messages
+2025-05-02 18:21:46,013 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-05-02 18:21:46,014 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-02 18:22:34,286 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-05-02 18:22:34,286 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2025-05-02 18:22:35,944 - __main__ - INFO - Starting Medical Transcript Q&A System...
+2025-05-02 18:22:35,944 - __main__ - INFO - API Key present: Yes
+2025-05-02 18:22:36,024 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7861/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-02 18:22:36,032 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7861/ "HTTP/1.1 200 OK"
+2025-05-02 18:22:36,069 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-02 18:22:54,999 - __main__ - INFO - User message: What was the diagnosis for the ORIF surgery?
+2025-05-02 18:22:54,999 - __main__ - INFO - Current history length: 0
+2025-05-02 18:22:54,999 - __main__ - INFO - Current conversation ID: None
+2025-05-02 18:22:55,101 - __main__ - INFO - Processing user message: What was the diagnosis for the ORIF surgery?...
+2025-05-02 18:22:55,101 - __main__ - INFO - Created new conversation with ID: 88e3c12d-a85a-4a5a-b0ec-cfc44290fc60
+2025-05-02 18:22:55,101 - __main__ - INFO - Processing message for conversation 88e3c12d-a85a-4a5a-b0ec-cfc44290fc60: What was the diagnosis for the ORIF surgery?
+2025-05-02 18:22:56,413 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-02 18:22:57,290 - primp - INFO - response: https://html.duckduckgo.com/html 200
+2025-05-02 18:23:03,557 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-02 18:23:03,563 - __main__ - INFO - Thread 88e3c12d-a85a-4a5a-b0ec-cfc44290fc60 now has 2 messages
+2025-05-02 18:23:29,388 - __main__ - INFO - Clearing conversation history
+2025-05-02 18:23:29,389 - __main__ - INFO - Created new conversation with ID: 465ebf30-3f9c-4fea-a20f-77e2f6ee8d14
+2025-05-02 18:23:31,781 - __main__ - INFO - User message: Summarize the Knee Arthroplasty surgical procedure.
+2025-05-02 18:23:31,781 - __main__ - INFO - Current history length: 0
+2025-05-02 18:23:31,781 - __main__ - INFO - Current conversation ID: 465ebf30-3f9c-4fea-a20f-77e2f6ee8d14
+2025-05-02 18:23:31,832 - __main__ - INFO - Processing user message: Summarize the Knee Arthroplasty surgical procedure...
+2025-05-02 18:23:31,833 - __main__ - INFO - Processing message for conversation 465ebf30-3f9c-4fea-a20f-77e2f6ee8d14: Summarize the Knee Arthroplasty surgical procedure.
+2025-05-02 18:23:33,174 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-02 18:23:33,993 - primp - INFO - response: https://html.duckduckgo.com/html 200
+2025-05-02 18:23:47,236 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-02 18:23:47,243 - __main__ - INFO - Thread 465ebf30-3f9c-4fea-a20f-77e2f6ee8d14 now has 2 messages
+2025-05-02 18:24:31,630 - __main__ - INFO - Clearing conversation history
+2025-05-02 18:24:31,630 - __main__ - INFO - Created new conversation with ID: ca5bf619-2a57-426c-8dfc-74736d20c035
+2025-05-02 18:24:50,632 - __main__ - INFO - User message: What surgery was done in the Knee Arthroplasty sample?
+2025-05-02 18:24:50,632 - __main__ - INFO - Current history length: 0
+2025-05-02 18:24:50,632 - __main__ - INFO - Current conversation ID: ca5bf619-2a57-426c-8dfc-74736d20c035
+2025-05-02 18:24:50,685 - __main__ - INFO - Processing user message: What surgery was done in the Knee Arthroplasty sam...
+2025-05-02 18:24:50,685 - __main__ - INFO - Processing message for conversation ca5bf619-2a57-426c-8dfc-74736d20c035: What surgery was done in the Knee Arthroplasty sample?
+2025-05-02 18:24:51,735 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-02 18:24:53,046 - primp - INFO - response: https://lite.duckduckgo.com/lite/ 200
+2025-05-02 18:25:00,726 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-02 18:25:00,731 - __main__ - INFO - Thread ca5bf619-2a57-426c-8dfc-74736d20c035 now has 2 messages
+2025-05-02 18:25:20,720 - __main__ - INFO - User message: what is the average recovery time for this
+2025-05-02 18:25:20,720 - __main__ - INFO - Current history length: 2
+2025-05-02 18:25:20,720 - __main__ - INFO - Current conversation ID: ca5bf619-2a57-426c-8dfc-74736d20c035
+2025-05-02 18:25:20,822 - __main__ - INFO - Processing user message: what is the average recovery time for this...
+2025-05-02 18:25:20,822 - __main__ - INFO - Processing message for conversation ca5bf619-2a57-426c-8dfc-74736d20c035: what is the average recovery time for this
+2025-05-02 18:25:21,720 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-02 18:25:22,679 - primp - INFO - response: https://html.duckduckgo.com/html 200
+2025-05-02 18:25:29,706 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-02 18:25:29,711 - __main__ - INFO - Thread ca5bf619-2a57-426c-8dfc-74736d20c035 now has 4 messages
